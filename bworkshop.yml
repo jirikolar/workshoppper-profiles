@@ -1,0 +1,40 @@
+---
+id: training
+name: Container Roadshow
+
+content:
+  url: https://raw.githubusercontent.com/osevg/workshopper-content/master
+
+vars:
+  USER_NAME: "userXX"
+  USER_PASSWORD: "passwordXX"
+  PARKSMAP_IMAGENAME: "parksmap"
+  PARKSMAP_VERSION: "1.2.0"
+  PARKSMAP_PY: true
+  NATIONALPARKS_VERSION: "1.2.1"
+  MLBPARKS_VERSION: "1.0.0"
+  ETHERPAD_ENABLED: true
+  ETHERPAD_URL_PREFIX: "etherpad-workshop-infra"
+  DOCS_URL: "docs.openshift.com/container-platform"
+  OPENSHIFT_NAME: "OpenShift Container Platform"
+  OPENSHIFT_SHORTNAME: "OCP"
+  OPENSHIFT_VERSION: "3.4"
+  DOWNLOAD_CLIENT_WINDOWS: "https://github.com/openshift/origin/releases/download/v1.4.1/openshift-origin-client-tools-v1.4.1-3f9807a-windows.zip"
+  DOWNLOAD_CLIENT_MAC: "https://github.com/openshift/origin/releases/download/v1.4.1/openshift-origin-client-tools-v1.4.1-3f9807a-mac.zip"
+  DOWNLOAD_CLIENT_LIN64: "https://github.com/openshift/origin/releases/download/v1.4.1/openshift-origin-client-tools-v1.4.1-3f9807a-linux-64bit.tar.gz"
+  DOWNLOAD_CLIENT_LIN32: "https://github.com/openshift/origin/releases/download/v1.4.1/openshift-origin-client-tools-v1.4.1-3f9807a-linux-32bit.tar.gz"
+
+modules:
+  activate:
+    - install
+    - explore
+    - parksmap-architecture
+    - docker
+    - scaling
+    - routes
+    - permissions
+    - python
+    - databases-py
+    - application-health
+    - codechanges
+    - templates
